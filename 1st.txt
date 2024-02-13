@@ -1,0 +1,13 @@
+We're using built-in middleware express.json() to parse JSON bodies of incoming requests.
+
+Application-level middleware is used to log incoming requests.
+
+Router-level middleware authenticate is used to authenticate authors before creating new blogs.
+
+Configurable middleware authenticate checks the provided credentials and adds the authenticated author to the request object.
+
+Routes are defined within the authorRouter, including registration, fetching all authors, creating new blogs, and retrieving blogs by author's ID.
+
+The authorRouter is mounted at the /authors endpoint in the main Express application.
+
+The server is started on the specified port (or default port 3000).
